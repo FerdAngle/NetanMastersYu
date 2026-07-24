@@ -25,27 +25,26 @@
 
 1) Open DBZ Final Stand: Remastered on your ALT account FIRST (the account that will be m1ing your main) and press Win + RightArrowKey to split your screen with your alt on the right handside.  
 
-2) Next, run process explorer as administrator and then type roblox in the top right search field and enable the handle panel found near the top left (or enable it via CTRL + L) 
+2) Next, run process explorer as administrator and then type roblox in the top right search field and afterwards enable the Handle panel found near the top left (or enable it via CTRL + L) 
 <div align="center">
 <picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/processExplorerSS/HandleFindRblxSS.png">
 </picture>
 </div>
 
-2b) Click on RobloxPlayerBeta.exe and double check you're on the "Handle" section of the panel below. Then find the event that dislays "ROBLOX_SingletonEvent" and right click on the even and click "Close Handle". 
+2.b) Click on RobloxPlayerBeta.exe and double check you're on the "Handle" section of the panel below. Then find the event that dislays "ROBLOX_SingletonEvent" and right click on the even and click "Close Handle". 
 <div align="center">
 <picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/processExplorerSS/SingletonSS.png">
 </picture>
 </div>
 
-3) With both in the server, find a spot where it's tight enough for both your alt and main to fit and you can be reliably m1ed  
-   or create a spot by digging a hole in a ground
+3) With both accounts launched and in the same server, find a confined space where your alt can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like
+   area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
-4) On your alt, hold down LMB (left mouse button) whilst in the tight space, and at the same time press ESC and your alt should 
-   be m1ing on its own. Do not pull down the ESC menu. 
+5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
 
-5) Go back to your main and start the macro using the start hotkey (whilst ensuring the settings are right for you)
+6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
 
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?color=blue
