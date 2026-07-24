@@ -1,5 +1,9 @@
 > [!CAUTION]
 > I'm **not** hosting on any other site. The only official place to download NetanMastersYu is this repository.
+<picture>
+  <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/MacroLogo.png"> <!-- dark theme (light text) -->
+</picture>
+<br>
 
 PREREQUISITES:
 - ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
