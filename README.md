@@ -1,7 +1,7 @@
 > [!CAUTION]
 > I'm **NOT** hosting on any other site. The only official place to download NetanMastersYu is this repository.
 >
-<div align="center"> 
+<div align="center">
 <picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/logos/MacroLogo.png">
 </picture>
@@ -10,7 +10,7 @@
 [![][downloads-shield]][downloads-link]
 
 </div>
-<a name="Prerequisites"><h2>🔨 Utilities needed before installation</h2></a>
+<a name="Prerequisites"><h1>🔨 Prerequisites </h1></a>
 - ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
 
 <a name="installation"><h2>🛠️ Installation</h2></a>
