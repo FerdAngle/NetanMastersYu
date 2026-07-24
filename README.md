@@ -46,9 +46,10 @@
 
 6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
 
-[latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu
+[latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
 
-[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total
+[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?label=downloads&labelColor=black&color=40ca53
 [downloads-link]: https://github.com/FerdAngle/NetanMastersYu/releases
+
 
