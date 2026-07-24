@@ -23,7 +23,7 @@
 
 <a name="installation"><h2>❔ Tutorial</h2></a>
 
-1) Open DBZ Final Stand: Remastered on your ALT account FIRST (the account that will be m1ing your main) and press Win + RightArrowKey to split your screen with your alt on the right handside.  
+1) Open DBZ Final Stand: Remastered on your ALT account FIRST (the account that will be m1ing your main) and press Win + RightArrowKey to split your screen with your ALT account on the right handside.  
 
 2) Next, run process explorer as administrator and then type roblox in the top right search field and afterwards enable the Handle panel found near the top left (or enable it via CTRL + L) 
 <div align="center">
@@ -39,7 +39,7 @@
 </picture>
 </div>
 
-3) With both accounts launched and in the same server, find a confined space where your alt can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like
+3) With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like
    area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
 5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
