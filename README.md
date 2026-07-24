@@ -1,8 +1,15 @@
 > [!CAUTION]
 > I'm **NOT** hosting on any other site. The only official place to download NetanMastersYu is this repository.
-<picture>
-  <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/logos/MacroLogo.png" width="600px" style="margin-left:400px;"> 
-</picture>
+<table>
+  <tr>
+    <td width="200"></td>
+    <td>
+      <picture>
+        <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/logos/MacroLogo.png">
+      </picture>
+    </td>
+  </tr>
+</table>
 <br>
 
 PREREQUISITES:
