@@ -32,7 +32,7 @@
 </picture>
 </div>
 
-2.b) Click on RobloxPlayerBeta.exe and double check you're on the "Handle" section of the panel below. Then find the event that dislays "ROBLOX_SingletonEvent" and right click on the even and click "Close Handle". 
+2.b) Click on RobloxPlayerBeta.exe and double check you're on the "Handles" section of the panel below. Then find the event that dislays "ROBLOX_SingletonEvent" and right click on the even and click "Close Handle". 
 <div align="center">
 <picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/processExplorerSS/SingletonSS.png">
@@ -47,7 +47,7 @@
 6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
 
 
-[latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?color=blue
-[latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
-[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?color=green
+[latest-release-shield]: https://img.shields.io/github/v/release/NatroTeam/NatroMacro?logo=github&logoColor=white&labelColor=black&color=faa125
+[latest-release-link]: https://github.com/NatroTeam/NatroMacro/releases/latest
+[downloads-shield]: https://img.shields.io/github/downloads/NatroTeam/NatroMacro/total?label=downloads&labelColor=black&color=40ca53&logo=data:image/svg%2bxml;base64,PHN2ZwogICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGgKICAgICBmaWxsPSIjZmZmIgogICAgIGQ9Ik0gMTIsMC4yMDk2MTUxNSBBIDExLjc5MDM4NSwxMS43OTAzODUgMCAxIDAgMjMuNzkwMzg1LDEyIDExLjc5MDM4NSwxMS43OTAzODUgMCAwIDAgMTIsMC4yMDk2MTUxNSBaIE0gOS4zMDAwMDE5LDkuOTgzODQ0MiAxMC44MjA5NjIsMTEuNTE2NTk0IFYgNC45MjU3NjkxIGggMi4zNTgwNzYgViAxMS41MTY1OTQgTCAxNC42OTk5OTgsOS45OTU2MzQ2IDE2LjM2MjQ0MiwxMS42NTgwNzkgMTIsMTYuMDIwNTIxIDcuNjI1NzY3MiwxMS42NTgwNzkgWiBNIDE2LjcxNjE1NCwxOS4wNzQyMzEgSCA3LjI4Mzg0NjEgdiAtMi4zNTgwNzcgaCA5LjQzMjMwNzkgeiIKICAgICAvPgo8L3N2Zz4K
 [downloads-link]: https://github.com/NatroTeam/NatroMacro/releases
