@@ -1,15 +1,18 @@
 > [!CAUTION]
 > I'm **NOT** hosting on any other site. The only official place to download NetanMastersYu is this repository.
-<div style="display:flex; justify-content:center; padding-left:200px;">
+<picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/logos/MacroLogo.png">
-</div>
+</picture>
 
+[![][latest-release-shield]][latest-release-link]
+[![][downloads-shield]][downloads-link]
 
 PREREQUISITES:
 - ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
 
-🛠️ Installation
+<a name="installation"><h2>🛠️ Installation</h2></a>
 
-    1. Download NetanMastersYu v#.#.#.zip from the latest release
-    2. Open NetanMastersYu _v#.#.# and double-click the folder inside
-    3. Run MASTERSTART.bat and wait for the macro to load
+1. Download NetanMastersYu v#.#.#.zip from the latest release
+2. Open NetanMastersYu _v#.#.# and double-click the folder inside
+3. Run MASTERSTART.bat and wait for the macro to load
+
