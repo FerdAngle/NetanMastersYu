@@ -16,3 +16,9 @@ PREREQUISITES:
 2. Open NetanMastersYu _v#.#.# and double-click the folder inside
 3. Run MASTERSTART.bat and wait for the macro to load
 
+
+[latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?color=blue
+[latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
+[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?color=green
+
+[downloads-link]: https://github.com/NatroTeam/NatroMacro/releases
