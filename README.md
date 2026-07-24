@@ -1,2 +1,5 @@
-# Ferds mastery macro-
-A form mastery macro for the roblox game DBZ Final Stand Remastered.
+🛠️ Installation
+
+    1. Download NetanMastersYu v#.#.#.zip from the latest release
+    2. Open NetanMastersYu _v#.#.# and double-click the folder inside
+    3. Run MASTERSTART.bat and wait for the macro to load
