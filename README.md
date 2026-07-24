@@ -1,5 +1,5 @@
 > [!CAUTION]
-> I do **not** have a website. The only official place to download NetanMastersYu is this repository.
+> I'm **not** hosting on any other site. The only official place to download NetanMastersYu is this repository.
 
 PREREQUISITES:
 - ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
