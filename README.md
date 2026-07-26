@@ -17,7 +17,7 @@
 
 <a name="installation"><h2>🛠️ Installation</h2></a>
 
-1. Download NetanMastersYu v#.#.#.zip from the latest release
+1. Download NetanMastersYu v#.#.#.zip from the [latest release][latest-release-link]
 2. Open NetanMastersYu _v#.#.# and double-click the folder inside
 3. Run MASTERSTART.bat and wait for the macro to load
 
@@ -45,7 +45,9 @@
 
 5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
 
-6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
+6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.
+
+**Note:** if you're not interested in farming mastery via an alt, then read the section below.
 
 <a name="more info"><h2>ℹ️ FAQ + Macro Config Setups:</h2></a>
 
