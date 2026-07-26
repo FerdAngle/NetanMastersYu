@@ -1,2 +1,2 @@
 @echo off
-start "" "JihadistMastery\AutoHotkeyU64.exe" "JihadistMastery\FAAAH.ahk"
+start "" "ahkscripts\AutoHotkeyU64.exe" "ahkscripts\MAIN_NetanMasters.ahk"
