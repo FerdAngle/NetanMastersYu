@@ -5,11 +5,10 @@
 <picture> 
   <img src="https://raw.githubusercontent.com/FerdAngle/.github/main/assets/logos/MacroLogo.png">
 </picture>
-<br>
+
 
 [![][latest-release-shield]][latest-release-link]
 [![][downloads-shield]][downloads-link]
-
 
 The open source form mastery project.
 </div>
