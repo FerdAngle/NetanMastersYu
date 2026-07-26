@@ -22,7 +22,7 @@ The open source form mastery project.
 
 1. Download NetanMastersYu v#.#.#.zip from the [latest release][latest-release-link]
 2. Open NetanMastersYu _v#.#.# and double-click the folder inside
-3. Run MASTERSTART.bat and wait for the macro to load
+3. Run StartMacro.bat and wait for the macro to load
 
 <a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
 
