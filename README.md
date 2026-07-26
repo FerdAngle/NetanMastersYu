@@ -10,7 +10,7 @@
 [![][latest-release-shield]][latest-release-link]
 [![][downloads-shield]][downloads-link]
 <br>
-The open source form mastery project.
+The open source form mastery project that reaches the red star.
 </div>
 
 <a name="Prerequisites"><h2>🛠️ Prerequisites </h2></a>
