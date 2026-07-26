@@ -18,7 +18,7 @@ The open source form mastery project.
 1. ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
 2. RDPWrapper (optional, for people who want to macro in the background whilst still wanting to use their PC)
 
-<a name="installation"><h2>🟢⤓ Installation</h2></a>
+<a name="installation"><h2>⬇️ Installation</h2></a>
 
 1. Download NetanMastersYu v#.#.#.zip from the [latest release][latest-release-link]
 2. Open NetanMastersYu _v#.#.# and double-click the folder inside
