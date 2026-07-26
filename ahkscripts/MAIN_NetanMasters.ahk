@@ -308,11 +308,14 @@ HelpInfoGUI:
         
         5) Go back to your main and start the macro using the start hotkey (whilst ensuring the settings are right for you)
  -----------------------------------------
-        Macro config setups: 
+        Macro config setups + Additional Info: 
 
         Combat time only: Set Transformation Phase to "Before TP" | Have a user in the TP User field.
         Combat zenkai: Set Transformation Phase to "After TP" | Have a user in the TP User field.
         Transformation/detransformation loop only: Set Transformation Phase to "Before TP" | Blank out the TP User field
+        
+        ADDING forms/slots: Hover your mouse cursor where your form/slot is on your SPLIT screen view of roblox and press the binded the associated binded hotkey 
+        DELETING or RENAMING forms/slots: right click on the form/slot selected in the rectangular field and the options will appear.
     )  
          
     Gui, 3:Show, Center, InfoHelp
