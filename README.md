@@ -47,14 +47,14 @@
 
 <a name="more info"><h2>ℹ️ FAQ/Additional Info:</h2></a>
 
-**Q:**I want to just repeatedly transform and detransform, how do I do that?
-**A:**Blank out the TP User field and set your transformation phase to "Before TP" and configure every other setting to your preference and you'll be in a transforming/detransforming loop. 
+**Q:** I want to just repeatedly transform and detransform, how do I do that?
+**A:** Blank out the TP User field and set your transformation phase to "Before TP" and configure every other setting to your preference and you'll be in a transforming/detransforming loop. 
 
-**Q:**As a frieza, I remain in form after death, how will I be affected?? 
-**A:**Unfortunately, mastery will just be 2x slower for friezas since they'll need to manually detransform during the macro process. However, I'll try to find a workaround for this in the future. 
+**Q:** As a frieza, I remain in form after death, how will I be affected?? 
+**A:** Unfortunately, mastery will just be 2x slower for friezas since they'll need to manually detransform during the macro process. However, I'll try to find a workaround for this in the future. 
 
-**Q:**How do I farm FSSJ mastery? 
-**A:**Just set your transformation key to "None" (whilst having your setting set to "After TP" and an alt to TP to) 
+**Q:** How do I farm FSSJ mastery? 
+**A:** Just set your transformation key to "None" (whilst having your setting set to "After TP" and an alt to TP to) 
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
