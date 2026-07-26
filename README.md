@@ -58,6 +58,12 @@ The open source form mastery project.
 **Combat zenkai:** Set Transformation Phase to "After TP" | Have a user in the TP User field. <br>
 **Transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
 
+**Q:** How do I add forms/slots? <br>
+**A:** Hover your cursor where your form/slot is on your SPLIT screen view of roblox, and press your binded key related to it to save the coordinates of its position. 
+
+**Q:** How do I delete or rename forms/slots? <br> 
+**A:** Right click on the form/slot that is selected in the rectangular field and the options will show. 
+
 **Q:** As a frieza, I remain in form after death, how will I be affected?? <br>
 **A:** 💀🤞 Unfortunately, mastery will just be 2x slower for friezas since they'll need to detransform during the macro process. However, I'll try to find a workaround for this in the future (since I MAIN the race)
 
@@ -71,10 +77,10 @@ The open source form mastery project.
 
 ME, MYSELF AND I.
 
-In all seriousness, I was inspired to start on this project through viewing natro macro's repository (The GOAT), in fact a lot of what you see on this webpage is inspired by the design of natro macro repo. 
+In all seriousness, I was inspired to start on this project due to being a longtime user of natro macro & a BSS fan; so when I came to FSR I wondered "what annoying thing exists that takes a longtime to do but is possible to automate? and here we are", in fact a lot of what you see on this webpage is inspired by the design of natro macro's repo. 
 Can't quite say the same for the code though since I decided to start off with AHKv1 instead of AHKv2 💔
 
-@FerdAngle 
+@FerdAngle  <br>
 ...also to [REDACTED]Worl for giving me enough time to decide on whether or not I wanted to make this 🙏
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
