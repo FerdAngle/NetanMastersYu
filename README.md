@@ -67,6 +67,16 @@ The open source form mastery project.
 **Q:** How do I get/use RDPWrapper? <br>
 **A:** Watch a tutorial online for a setup (I personally recommend this up to the 5:10 mark https://www.youtube.com/watch?v=4Oexj5zf84I&t=45s) and then afterwards, try to always update your rdpwrap.ini file from the issues tab of the [official creators repository][rdp-wrap-link] 
 
+<a name="more info"><h2>💚 Credits</h2></a>
+
+ME, MYSELF AND I.
+
+In all seriousness, I was inspired to start on this project through viewing natro macro's repository (The GOAT), in fact a lot of what you see on this webpage is inspired by the design of natro macro repo. 
+Can't quite say the same for the code though since I decided to start off with AHKv1 instead of AHKv2 💔
+
+@FerdAngle 
+...also to [REDACTED]Worl for giving me enough time to decide on whether or not I wanted to make this 🙏
+
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
 
