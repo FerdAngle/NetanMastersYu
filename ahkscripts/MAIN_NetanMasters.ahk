@@ -153,7 +153,7 @@ TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarF
 
 SendMessage, 0x80, 0, GuiIcon,, A
 SendMessage, 0x80, 1, TaskbarIcon,, A
-Menu, Tray, Icon, MacroStarFlameIcon.ico
+Menu, Tray, Icon, ../macro_images/MacroStarFlameIcon.ico
 
 return                                                                    ; SET-UP CREATION PROCESS ENDS HERE
 
