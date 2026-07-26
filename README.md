@@ -13,7 +13,7 @@
 <a name="Prerequisites"><h2>🔨 Prerequisites </h2></a>
 
 1. ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
-2. RDPWrapper (optional)
+2. RDPWrapper (optional, for people who want to macro in the background whilst still wanting to use their PC)
 
 <a name="installation"><h2>🛠️ Installation</h2></a>
 
@@ -51,23 +51,25 @@
 
 <a name="more info"><h2>ℹ️ FAQ + Macro Config Setups:</h2></a>
 
-**Q:** I want to just repeatedly transform and detransform, how do I do that? <br>
-**A:** Blank out the TP User field and set your transformation phase to "Before TP" and configure every other setting to your preference and you'll be in a transforming/detransforming loop. 
+**Combat time only:** Set Transformation Phase to "Before TP" | Have a user in the TP User field. <br>
+**Combat zenkai:** Set Transformation Phase to "After TP" | Have a user in the TP User field. <br>
+**Transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
 
 **Q:** As a frieza, I remain in form after death, how will I be affected?? <br>
-**A:** Unfortunately, mastery will just be 2x slower for friezas since they'll need to manually detransform during the macro process. However, I'll try to find a workaround for this in the future. 
+**A:** 💀🤞 Unfortunately, mastery will just be 2x slower for friezas since they'll need to detransform during the macro process. However, I'll try to find a workaround for this in the future (since I MAIN the race)
 
 **Q:** How do I farm FSSJ mastery? <br>
 **A:** Just set your transformation key to "None" (whilst having your setting set to "After TP" and an alt to TP to) 
 
-**Combat time only:** Set Transformation Phase to "Before TP" | Have a user in the TP User field. <br>
-**Combat zenkai:** Set Transformation Phase to "After TP" | Have a user in the TP User field. <br>
-**Transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
+**Q:** How do I use RDPWrapper? 
+**A:** Watch a tutorial online for a setup and then afterwards (I personally recommend this up to the 5:10 mark https://www.youtube.com/watch?v=4Oexj5zf84I&t=45s) and then try to always update your rdpwrap.ini file from the issues tab of the [official creators repository][rdp-wrap-link] 
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
 
 [downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?label=downloads&labelColor=black&color=40ca53
 [downloads-link]: https://github.com/FerdAngle/NetanMastersYu/releases
+
+[rdp-wrap-link]: https://github.com/stascorp/rdpwrap/issues
 
 
