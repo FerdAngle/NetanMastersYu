@@ -77,8 +77,8 @@ The open source form mastery project that reaches for the red star.
 
 ME, MYSELF AND I.
 
-In all seriousness, I was inspired to start on this project due to being a longtime user of natro macro & a BSS fan; so when I came to FSR I wondered "what annoying thing exists that takes a longtime to do but is possible to automate? and here we are", in fact a lot of what you see on this webpage is inspired by the design of natro macro's repo. 
-Can't quite say the same for the code though since I decided to start off with AHKv1 instead of AHKv2 💔
+In all seriousness, I was inspired to start on this project due to being a longtime user of natro macro & a BSS fan; so when I came to FSR I wondered "what annoying thing exists that takes a longtime to do but is possible to automate?" and thus here we are...In fact, a lot of what you see on this webpage is inspired by the design of natro macro's repo. 
+Although, can't quite say the same for the code though since I decided to start off with AHKv1 instead of AHKv2 💔
 
 @FerdAngle  <br>
 ...also to [REDACTED]Worl for giving me enough time to decide on whether or not I wanted to make this 🙏
