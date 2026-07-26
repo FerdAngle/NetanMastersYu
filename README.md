@@ -60,7 +60,7 @@
 
 **Combat time only:** Set Transformation Phase to "Before TP" | Have a user in the TP User field. <br>
 **Combat zenkai:** Set Transformation Phase to "After TP" | Have a user in the TP User field. <br>
-**transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
+**Transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
