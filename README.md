@@ -70,7 +70,7 @@ The open source form mastery project.
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
 
-[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?label=downloads&labelColor=black&color=40ca53
+[downloads-shield]: https://img.shields.io/github/downloads/FerdAngle/NetanMastersYu/total?label=downloads&labelColor=black&color=40ca53&logo=abdownloadmanager&logoColor=white
 [downloads-link]: https://github.com/FerdAngle/NetanMastersYu/releases
 
 [rdp-wrap-link]: https://github.com/stascorp/rdpwrap/issues
