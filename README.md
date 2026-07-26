@@ -21,7 +21,7 @@
 2. Open NetanMastersYu _v#.#.# and double-click the folder inside
 3. Run MASTERSTART.bat and wait for the macro to load
 
-<a name="installation"><h2>❔ Tutorial</h2></a>
+<a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
 
 1) Open DBZ Final Stand: Remastered on your ALT account FIRST (the account that will be m1ing your main) and press Win + RightArrowKey to split your screen with your ALT account on the right handside.  
 
@@ -39,13 +39,15 @@
 </picture>
 </div>
 
-3) After closing the Singleton event, you should then launch your main account WHILST still keeping your alt ingame. With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
+3) After closing the Singleton event, you should then launch your main account WHILST still keeping your alt ingame
 
-4) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
+4) With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
-5) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
+5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
 
-<a name="more info"><h2>ℹ️ FAQ/Additional Info:</h2></a>
+6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
+
+<a name="more info"><h2>ℹ️ FAQ + Macro Config Setups:</h2></a>
 
 **Q:** I want to just repeatedly transform and detransform, how do I do that? <br>
 **A:** Blank out the TP User field and set your transformation phase to "Before TP" and configure every other setting to your preference and you'll be in a transforming/detransforming loop. 
@@ -55,6 +57,10 @@
 
 **Q:** How do I farm FSSJ mastery? <br>
 **A:** Just set your transformation key to "None" (whilst having your setting set to "After TP" and an alt to TP to) 
+
+**Combat time only:** Set Transformation Phase to "Before TP" | Have a user in the TP User field. 
+**Combat zenkai:** Set Transformation Phase to "After TP" | Have a user in the TP User field.
+**transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
