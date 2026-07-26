@@ -80,13 +80,6 @@ if (selectedSlot != ""){
 
 Gui, +AlwaysOnTop +Caption +Border +Resize MinSize300x275 +OwnDialogs
 
-GuiIcon := DllCall("LoadImage", "Ptr", 0, "Str", "MacroStarIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
-TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "MacroStarFlameIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
-
-SendMessage, 0x80, 0, GuiIcon,, A
-SendMessage, 0x80, 1, TaskbarIcon,, A
-Menu, Tray, Icon, MacroStarIcon.ico
-
 Gui, Add, Text,, X Hold Time (ms):
 Gui, Add, Edit, vXTimeEdit w120  gSaveSettings, %XTime%
 
@@ -156,8 +149,8 @@ global addFormHOTKEYPrev := addFormHOTKEY
 global addSlotHOTKEYPrev := addSlotHOTKEY 
 SetTimer, UglyCode, 100
 
-GuiIcon := DllCall("LoadImage", "Ptr", 0, "Str", "Macro_Images/MacroStarIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr") ; Rewrite these to something simpler in AHK v2 
-TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "Macro_Images/MacroStarFlameIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
+GuiIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr") ; Rewrite these to something simpler in AHK v2 
+TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarFlameIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
 
 SendMessage, 0x80, 0, GuiIcon,, A
 SendMessage, 0x80, 1, TaskbarIcon,, A
