@@ -47,7 +47,7 @@
 
 6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.
 
-**Note:** if you're not interested in farming mastery via an alt, and just want to transofmr/detransform loop, then read the section below.
+**Note:** if you're not interested in farming mastery via an alt, and just want to transoform/detransform loop, then read the section below.
 
 <a name="more info"><h2>ℹ️ FAQ + Macro Config Setups:</h2></a>
 
