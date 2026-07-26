@@ -39,7 +39,7 @@
 </picture>
 </div>
 
-3) After closing the Singleton event, you should then launch your main account WHILST still keeping your alt ingame
+3) After closing the Singleton event, you should then launch your main account **whilst** keeping your ALT account open ingame, split screening it like your ALT's roblox window but this time positioning it to the left side of your screen. Once your main account is on the main menu of FSR, hover your cursor over the slot that you want to farm mastery on and press your binded "Add slot" hotkey (open the macro beforehand) Then click on the slot and find what server your ALT account belongs to. 
 
 4) With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
