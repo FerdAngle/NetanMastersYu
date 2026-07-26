@@ -16,7 +16,7 @@ The open source form mastery project.
 <a name="Prerequisites"><h2>🛠️ Prerequisites </h2></a>
 
 1. ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
-2. RDPWrapper (optional, for people who want to macro in the background whilst still wanting to use their PC)
+2. RDPWrapper (optional, for people who want to macro in the background while still wanting to use their PC)
 
 <a name="installation"><h2>⬇️ Installation</h2></a>
 
