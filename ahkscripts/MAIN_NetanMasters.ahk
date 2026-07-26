@@ -1,6 +1,7 @@
 #SingleInstance Force
 #MaxThreadsPerHotkey 2
 SetTitleMatchMode, 2
+SetWorkingDir, %A_ScriptDir%
 CoordMode, Mouse, Screen
 
 global XTime := 2000
@@ -307,16 +308,11 @@ HelpInfoGUI:
         
         5) Go back to your main and start the macro using the start hotkey (whilst ensuring the settings are right for you)
  -----------------------------------------
-        Additional helpful info: 
+        Macro config setups: 
 
-        Q: How do I repeatedely transform and detransform? I'm a human that wants to master kaioken!    
-        A: Simply blank out the TP User field and the macro will  have you repeatedly transformed into the form you have chosen. 
-
-        Q: How do I master FSSJ as a saiyain? 
-        A: On the TransformKey setting, simply select "None", and by the process of the main section you'll be revived. 
-
-        Q: I'm a frieza/a user of chrome, how do I master it since I remain in form after death? 
-        A: A method for permitting this will be implemented in a future update, relatively soon... 
+        Combat time only: Set Transformation Phase to "Before TP" | Have a user in the TP User field.
+        Combat zenkai: Set Transformation Phase to "After TP" | Have a user in the TP User field.
+        Transformation/detransformation loop only: Set Transformation Phase to "Before TP" | Blank out the TP User field
     )  
          
     Gui, 3:Show, Center, InfoHelp
