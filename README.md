@@ -39,12 +39,22 @@
 </picture>
 </div>
 
-3) With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like
-   area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
+3) After closing the Singleton event, you should then launch your main account WHILST still keeping your alt ingame. With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
 4) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
 
 5) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.  
+
+<a name="more info"><h2>ℹ️ FAQ/Additional Info:</h2></a>
+
+Q: I want to just repeatedly transform and detransform, how do I do that?
+A: Blank out the TP User field and set your transformation phase to "Before TP" and configure every other setting to your preference and you'll be in a transforming/detransforming loop. 
+
+Q: As a frieza, I remain in form after death, how will I be affected?? 
+A: Unfortunately, mastery will just be 2x slower for friezas since they'll need to manually detransform during the macro process. However, I'll try to find a workaround for this in the future. 
+
+Q: How do I farm FSSJ mastery? 
+A: Just set your transformation key to "None" (whilst having your setting set to "After TP" and an alt to TP to) 
 
 [latest-release-shield]: https://img.shields.io/github/v/release/FerdAngle/NetanMastersYu?logo=github&logoColor=white&labelColor=black&color=faa125
 [latest-release-link]: https://github.com/FerdAngle/NetanMastersYu/releases/latest
