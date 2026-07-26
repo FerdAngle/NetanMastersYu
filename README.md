@@ -13,7 +13,7 @@
 The open source form mastery project.
 </div>
 
-<a name="Prerequisites"><h2>🔨 Prerequisites </h2></a>
+<a name="Prerequisites"><h2>🛠️ Prerequisites </h2></a>
 
 1. ProcessExplorer https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
 2. RDPWrapper (optional, for people who want to macro in the background whilst still wanting to use their PC)
@@ -50,7 +50,7 @@ The open source form mastery project.
 
 6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.
 
-**Note:** if you're not interested in farming mastery via an alt, and just want to transoform/detransform loop, then read the section below.
+**Note:** if you're not interested in farming mastery via an alt, and just want to transform/detransform loop, then read the section below.
 
 <a name="more info"><h2>ℹ️ FAQ + Macro Config Setups:</h2></a>
 
