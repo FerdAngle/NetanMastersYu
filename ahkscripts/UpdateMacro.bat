@@ -55,5 +55,5 @@ del /f /q "%ZIP_PATH%"
 echo UPDATING has FINISHED!
 start "" "%~dp0AutoHotkeyU64.exe" "%~dp0MAIN_NetanMasters.ahk"
 
-timeout /t 60 >nul
+timeout /t 2 >nul
 exit /b 0
