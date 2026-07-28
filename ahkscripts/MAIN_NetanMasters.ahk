@@ -158,30 +158,33 @@ Menu, Tray, Icon, ../macro_images/MacroStarFlameIcon.ico
 
 IniRead, currentVersion, settings.ini, ProgramSettings, version, 1.0.0
 
-url := "https://api.github.com/repos/FerdAngle/NetanMastersYu/releases"
-currentVersion := StrSplit(currentVersion, ".")
-vFinder := ComObjCreate("WinHttp.WinHttpRequest.5.1")
-vFinder.Open("GET", url, false)
-vFinder.SetRequestHeader("Accept", "application/json")
-vFinder.Send()
-json := vFinder.ResponseText
+try {
+    url := "https://api.github.com/repos/FerdAngle/NetanMastersYu/releases"
+    currentVersion := StrSplit(currentVersion, ".")
+    vFinder := ComObjCreate("WinHttp.WinHttpRequest.5.1")
+    vFinder.Open("GET", url, false)
+    vFinder.SetRequestHeader("Accept", "application/json")
+    vFinder.Send()
+    json := vFinder.ResponseText
 
-RegExMatch(json, "((browser_download_url).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", browser_download_url) ; this looks extremely UGLY, but regex processes stuff in microseconds and I HATE the JSON.ahk lib. 
-;MsgBox % browser_download_url
-RegExMatch(browser_download_url,"((https).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", download_url)
-RegExMatch(download_url, "(\d+(?:\.\d+)*)", NewVersion)
-
-NewVersionA := StrSplit(NewVersion, ".")
-for i,num in NewVersionA {
-    if (num > currentVersion[i]){
-        ;MsgBox % "We are on the OLD version" num currentVersion[i]
-        MsgBox, 0x40004, % "New Version Found!", % "A new version is available, would you like to update now?"
-        IfMsgBox Yes 
-            greenlitUpdate := true         
-        else    
-            greenlitUpdate := false  
-        break        
-    } 
+    RegExMatch(json, "((browser_download_url).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", browser_download_url) ; this looks extremely UGLY, but regex processes stuff in microseconds and I HATE the JSON.ahk lib. 
+    ;MsgBox % browser_download_url
+    RegExMatch(browser_download_url,"((https).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", download_url)
+    RegExMatch(download_url, "(\d+(?:\.\d+)*)", NewVersion)
+    NewVersionA := StrSplit(NewVersion, ".")
+    for i,num in NewVersionA {
+        if (num > currentVersion[i]){
+            ;MsgBox % "We are on the OLD version" num currentVersion[i]
+            MsgBox, 0x40004, % "New Version Found!", % "A new version is available, would you like to update now?"
+            IfMsgBox Yes 
+                greenlitUpdate := true         
+            else    
+                greenlitUpdate := false  
+            break        
+        } 
+    }
+} catch e {
+    MsgBox,0x40010,NetanMastersYu, % "Could not check updates.`nCheck your internet."
 }
 
 if (greenlitUpdate){
@@ -192,7 +195,7 @@ if (greenlitUpdate){
     ExitApp 
 }
 
-return                                                                    ; ############# SET-UP CREATION PROCESS ENDS HERE ###############
+return                                      ; ############################################# SET-UP CREATION PROCESS ENDS HERE ################################################################################################
 
 HotkeyStates(State){
     Hotkey, %startHOTKEY%, %State% 
