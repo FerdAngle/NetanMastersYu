@@ -156,7 +156,43 @@ SendMessage, 0x80, 0, GuiIcon,, A
 SendMessage, 0x80, 1, TaskbarIcon,, A
 Menu, Tray, Icon, ../macro_images/MacroStarFlameIcon.ico
 
-return                                                                    ; SET-UP CREATION PROCESS ENDS HERE
+IniRead, currentVersion, settings.ini, ProgramSettings, version, 1.0.0
+
+url := "https://api.github.com/repos/FerdAngle/NetanMastersYu/releases"
+currentVersion := StrSplit(currentVersion, ".")
+vFinder := ComObjCreate("WinHttp.WinHttpRequest.5.1")
+vFinder.Open("GET", url, false)
+vFinder.SetRequestHeader("Accept", "application/json")
+vFinder.Send()
+json := vFinder.ResponseText
+
+RegExMatch(json, "((browser_download_url).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", browser_download_url) ; this looks extremely UGLY, but regex processes stuff in microseconds and I HATE the JSON.ahk lib. 
+;MsgBox % browser_download_url
+RegExMatch(browser_download_url,"((https).*?(NetanMastersYu-v)(\d+(?:\.\d+)*)....)", download_url)
+RegExMatch(download_url, "(\d+(?:\.\d+)*)", NewVersion)
+
+NewVersionA := StrSplit(NewVersion, ".")
+for i,num in NewVersionA {
+    if (num > currentVersion[i]){
+        ;MsgBox % "We are on the OLD version" num currentVersion[i]
+        MsgBox, 0x40004, % "New Version Found!", % "A new version is available, would you like to update now?"
+        IfMsgBox Yes 
+            greenlitUpdate := true         
+        else    
+            greenlitUpdate := false  
+        break        
+    } 
+}
+
+if (greenlitUpdate){
+    currentVersion := NewVersionA
+    currentVersion := currentVersion[1] . "." . currentVersion[2] . "." . currentVersion[3]
+    IniWrite %currentVersion%, settings.ini, ProgramSettings, version
+    Run, %ComSpec% /C ""%A_ScriptDir%\UpdateMacro.bat" "%download_url%" "%NewVersion%""
+    ExitApp 
+}
+
+return                                                                    ; ############# SET-UP CREATION PROCESS ENDS HERE ###############
 
 HotkeyStates(State){
     Hotkey, %startHOTKEY%, %State% 
