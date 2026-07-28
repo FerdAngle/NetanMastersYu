@@ -24,7 +24,7 @@ powershell -NoProfile -ExecutionPolicy Bypass ^
   "$req = [System.Net.HttpWebRequest]::Create($url);" ^
   "$res = $req.GetResponse();" ^
   "$total = $res.ContentLength;" ^
-  "$req.Timeout = 8000;" ^
+  "$req.Timeout = 10000;" ^
   "$stream = $res.GetResponseStream();" ^
   "$file = [System.IO.File]::OpenWrite($out);" ^
   "$buffer = New-Object byte[] 8192;" ^
