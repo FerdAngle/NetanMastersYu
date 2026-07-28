@@ -175,7 +175,7 @@ try {
     for i,num in NewVersionA {
         if (num > currentVersion[i]){
             ;MsgBox % "We are on the OLD version" num currentVersion[i]
-            MsgBox, 0x40004, % "New Version Found!", % "A new version is available, would you like to update now?"
+            MsgBox, 0x40044, % "New Version Found!", % "A new version is available, would you like to update now?"
             IfMsgBox Yes 
                 greenlitUpdate := true         
             else    
