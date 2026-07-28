@@ -24,6 +24,7 @@ powershell -NoProfile -ExecutionPolicy Bypass ^
   "$req = [System.Net.HttpWebRequest]::Create($url);" ^
   "$res = $req.GetResponse();" ^
   "$total = $res.ContentLength;" ^
+  "$req.Timeout = 8000;" ^
   "$stream = $res.GetResponseStream();" ^
   "$file = [System.IO.File]::OpenWrite($out);" ^
   "$buffer = New-Object byte[] 8192;" ^
@@ -38,9 +39,15 @@ powershell -NoProfile -ExecutionPolicy Bypass ^
 echo Downloaded Zip SUCESSFULLY!
 timeout /t 2 >nul
 
+if errorlevel 1 (
+    echo Download failed due to timeout or connection error.
+    timeout /t 2 >nul 
+    exit /b 1
+)
 
 if not exist "%ZIP_PATH%" (
   echo Download failed. Zip not found: "%ZIP_PATH%"
+  timeout /t 2 >nul 
   exit /b 1
 )
 
