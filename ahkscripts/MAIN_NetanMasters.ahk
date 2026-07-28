@@ -164,6 +164,7 @@ try {
     vFinder := ComObjCreate("WinHttp.WinHttpRequest.5.1")
     vFinder.Open("GET", url, false)
     vFinder.SetRequestHeader("Accept", "application/json")
+    vFinder.SetTimeouts(10000, 10000, 10000, 10000)
     vFinder.Send()
     json := vFinder.ResponseText
 
