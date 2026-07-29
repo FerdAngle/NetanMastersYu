@@ -26,6 +26,12 @@ The open source form mastery project that reaches for the red star.
 
 NOTE: Your anti-virus might produce a false positive, so it's best to mark the folder as an exception within your anti-virus beforehand. 
 
+Default hotkeys:
+F1: Start the macro
+F2: Stop the macro
+J: Add form (saves the coordinates where your mouse cursor is)
+U: Add slot (saves the coordinates where your mouse cursor is)
+
 <a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
 
 Before beginning, you should have your roblox alt logged in on a browser and your main on a different browser or on the roblox app itself
@@ -63,7 +69,7 @@ Before beginning, you should have your roblox alt logged in on a browser and you
 **Transformation/detransformation loop only:** Set Transformation Phase to "Before TP" | Blank out the TP User field
 
 **Q:** How do I add forms/slots? <br>
-**A:** Hover your cursor where your form/slot is on your SPLIT screen view of roblox, and press your binded key related to it to save the coordinates of its position. 
+**A:** Hover your cursor where your form/slot is on roblox, and press your binded key related to it to save the coordinates of its position. For forms, you'll want to open up your transformation menu and when you see the form you want, move your mouse cursor to where it is and press your binded hotkey.  
 
 **Q:** How do I delete or rename forms/slots? <br> 
 **A:** Right click on the form/slot that is selected in the rectangular field and the options will show. 
