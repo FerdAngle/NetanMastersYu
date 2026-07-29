@@ -21,7 +21,7 @@ The open source form mastery project that reaches for the red star.
 <a name="installation"><h2>⬇️ Installation</h2></a>
 
 1. Download NetanMastersYu-v#.#.#.zip from the [latest release (click here)][latest-release-link]
-2. Right click on the file and extract the file
+2. Right click on the zip file and find the option to extract the file
 3. Open the extracted file and and click on StartMacro.bat to open the macro. 
 
 <a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
