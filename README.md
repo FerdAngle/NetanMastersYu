@@ -26,11 +26,11 @@ The open source form mastery project that reaches for the red star.
 
 NOTE: Your anti-virus might produce a false positive, so it's best to mark the folder as an exception within your anti-virus beforehand. 
 
-Default hotkeys:
-F1: Start the macro
-F2: Stop the macro
-J: Add form (saves the coordinates where your mouse cursor is)
-U: Add slot (saves the coordinates where your mouse cursor is)
+Default hotkeys: <br>
+F1: Start the macro <br>
+F2: Stop the macro <br>
+J: Add form (saves the coordinates where your mouse cursor is) <br>
+U: Add slot (saves the coordinates where your mouse cursor is) 
 
 <a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
 
