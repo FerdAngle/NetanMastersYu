@@ -700,7 +700,7 @@ MainLoop:   ;----------------------------------------------  MAIN --------------
     }
     if (TPUser != ""){
         SetTimer, MainLoop, Off 
-        Sleep, 150
+        Sleep, 500
         Send, %TPKey% 
         WinGetPos,,,WinW,WinH, Roblox 
         ITx := (0.5 * WinW)
@@ -774,7 +774,7 @@ RespawnDetector:
         Sleep, 1000
         SetTimer, RespawnDetector, Off
         if  (WaiterWaiterMoreMastery){
-            ; MsgBox,0x40000,, % "INITIATE REJOIN", 1
+            MsgBox,0x40000,, % "INITIATING REJOIN IN 10s", 1
             LoggerPixel := 0xD90005
             AssuranceCount := 0
             loop {                        ; unfortunately need this since your corpse can occasionally be punched, setting you in combat even after you respawn. 
