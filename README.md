@@ -28,7 +28,7 @@ NOTE: Your anti-virus might produce a false positive, so it's best to mark the f
 
 <a name="installation"><h2>❔ Tutorial (for setting up two accounts to work with the macro) </h2></a>
 
-Before beginning, you should have your roblox alt logged in on a browser and your main on a different browser/or on the roblox app itself
+Before beginning, you should have your roblox alt logged in on a browser and your main on a different browser or on the roblox app itself
 
 1) Open DBZ Final Stand: Remastered on your ALT account FIRST (the account that will be m1ing your main) and press Win + RightArrowKey to split your screen with your ALT account on the right handside.  
 
