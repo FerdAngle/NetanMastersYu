@@ -45,19 +45,28 @@ if errorlevel 1 (
     exit /b 1
 )
 
-if not exist "%ZIP_PATH%" (
-  echo Download failed. Zip not found: "%ZIP_PATH%"
-  timeout /t 2 >nul 
-  exit /b 1
-)
+set "WAITED=0"
 
+:find_zip
+if exist "%ZIP_PATH%" goto Resume
+
+timeout /t 1 >nul
+set /a WAITED+=1
+
+if %WAITED% GEQ 5 goto Zip_not_found
+goto find_zip
+
+:Zip_not_found 
+echo Download failed. Zip not found: "%ZIP_PATH%"
+timeout /t 2 >nul 
+exit /b 1
+
+:Resume
 REM Extract (Windows 10+ tar)
 tar -xf "%ZIP_PATH%" -C "%EXTRACT_DIR%"
 
 REM Delete zip
 del /f /q "%ZIP_PATH%"
-
-
 
 echo UPDATING has FINISHED!
 start "" "%~dp0AutoHotkeyU64.exe" "%~dp0MAIN_NetanMasters.ahk"
