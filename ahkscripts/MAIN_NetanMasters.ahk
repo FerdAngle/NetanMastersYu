@@ -747,7 +747,7 @@ DeathWatcher:
 
     if (ErrorLevel = 0)
     {       
-            MsgBox,0x40000,, Found deathpixel, 1
+            ; MsgBox,0x40000,, Found deathpixel, 1
             SetTimer, DeathWatcher, Off
             SetTimer, RespawnDetector, 1000 
     }
@@ -774,7 +774,7 @@ RespawnDetector:
         Sleep, 1000
         SetTimer, RespawnDetector, Off
         if  (WaiterWaiterMoreMastery){
-            MsgBox,0x40000,, % "INITIATE REJOIN", 1
+            ; MsgBox,0x40000,, % "INITIATE REJOIN", 1
             LoggerPixel := 0xD90005
             AssuranceCount := 0
             loop {                        ; unfortunately need this since your corpse can occasionally be punched, setting you in combat even after you respawn. 
@@ -890,7 +890,7 @@ HPZenkai:
     , Fast RGB
     if (ErrorLevel = 0){
         SetTimer, HPZenkai, Off 
-        MsgBox,0x40000,,DetectedHP, 1
+        ; MsgBox,0x40000,,DetectedHP, 1
         SetTimer, DeathWatcher, Off     ;i aint taking chances of it detecting some random pixel from the other screen 
         Send, {m}    
         Sleep, 250                      
