@@ -136,7 +136,7 @@ Gui, Add, Button, vstopB gStopMacro w100 xs100 ys202.5, %stopHOTKEY% (Stop)
 Gui, Add, Button, gHotkeySettingsGUI w100 xs200 ys202.5, Hotkeys 
 Gui, Add, Button, gConfigGUI w100 xs ys222.5, Settings 
 Gui, Add, Button, gHelpInfoGUI w100 xs100 ys225.5, Help 
-Gui, Show, Center, NetanMastersYu
+Gui, Show, Center, % "NetanMastersYu v" currentVersion
 
 Menu, FormMenu, Add, Rename, MenuRenameHandler
 Menu, FormMenu, Add, Delete, MenuDeleteHandler
