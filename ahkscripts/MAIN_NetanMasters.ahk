@@ -24,6 +24,10 @@ global slotDisplayList := ""
 global modifyingSlots := false 
 global modifyingForms := false  
 global HotkeySet := []
+global PSenabled := false 
+global PScode := " "
+
+IniRead, currentVersion, settings.ini, ProgramSettings, version, 1.0.1
 
 IniRead, XTime, settings.ini, tSettings, XholdTime, %XTime%
 IniRead, transformKey, settings.ini, tSettings, transKey, %transformKey%
@@ -35,6 +39,9 @@ IniRead, startHOTKEY, settings.ini, UserSettings, startk, %startHOTKEY%
 IniRead, stopHOTKEY, settings.ini, UserSettings, stopk, %stopHOTKEY%
 IniRead, addFormHOTKEY, settings.ini, UserSettings, addformk, %addFormHOTKEY%
 IniRead, addSlotHOTKEY, settings.ini, UserSettings, addslotk, %addSlotHOTKEY%
+
+IniRead, PSenabled, settings.ini, ProgramSettings, state, %PSenabled% 
+IniRead, PScode, settings.ini, ProgramSettings, code, %PScode% 
 
 Hotkey, %startHOTKEY%, StartMacro
 Hotkey, %stopHOTKEY%, StopMacro
@@ -81,10 +88,10 @@ if (selectedSlot != ""){
 Gui, +AlwaysOnTop +Caption +Border +Resize MinSize300x275 +OwnDialogs
 
 Gui, Add, Text,, X Hold Time (ms):
-Gui, Add, Edit, vXTimeEdit w120  gSaveSettings, %XTime%
+Gui, Add, Edit, vXTimeEdit w120  gSaveDataMAIN, %XTime%
 
 Gui, Add, Text,, Forms:
-Gui, Add, DropDownList, vformEdit w120 gSaveSettings, %formDisplayList% 
+Gui, Add, DropDownList, vformEdit w120 gSaveDataMAIN, %formDisplayList% 
 
 Gui, Add, Text,, Tranformation Key: 
 if (transformKey = "G")
@@ -93,10 +100,10 @@ else if (transformKey = "H")
     transformKeySet := "G|H||None"
 else if (transformKey = "None")
     transformKeySet := "G|H|None||"
-Gui, Add, DropDownList, vTransKeyEdit w120 gSaveSettings, %transformKeySet%
+Gui, Add, DropDownList, vTransKeyEdit w120 gSaveDataMAIN, %transformKeySet%
 
 Gui, Add, Text, xs180 ys, TP to Player:
-Gui, Add, Edit, vTPUserEdit w120 gSaveSettings, %TPUser%
+Gui, Add, Edit, vTPUserEdit w120 gSaveDataMAIN, %TPUser%
 
 Gui, Add, Text,xs180 ys42.5, I.T Key:
 Gui, Add, Hotkey, vTPKeyEdit w120 gSaveHotkeys, %TPKey%
@@ -115,23 +122,31 @@ else{
     TPhaseSet := ""
 }
 
-Gui, Add, DropDownList, vTPhaseEdit w120 gSaveSettings, %TPhaseSet%
+Gui, Add, DropDownList, vTPhaseEdit w120 gSaveDataMAIN, %TPhaseSet%
 
 Gui, Add, Text, xs ys142.5, Preset: 
-Gui, Add, DropDownList, vPresetEdit w120 gSaveSettings, %PresetDefault%
+Gui, Add, DropDownList, vPresetEdit w120 gSaveDataMAIN, %PresetDefault%
 
 Gui, Add, Text, xs180 ys142.5, Slot: 
-Gui, Add, DropDownList, vslotEdit w120 gSaveSettings, %slotDisplayList%  
+Gui, Add, DropDownList, vslotEdit w120 gSaveDataMAIN, %slotDisplayList%  
 
 
 Gui, Add, Button, vstartB gStartMacro w100 xs ys202.5, %startHOTKEY% (Start) 
 Gui, Add, Button, vstopB gStopMacro w100 xs100 ys202.5, %stopHOTKEY% (Stop)
 Gui, Add, Button, gHotkeySettingsGUI w100 xs200 ys202.5, Hotkeys 
+Gui, Add, Button, gConfigGUI w100 xs ys222.5, Settings 
 Gui, Add, Button, gHelpInfoGUI w100 xs100 ys225.5, Help 
 Gui, Show, Center, NetanMastersYu
 
 Menu, FormMenu, Add, Rename, MenuRenameHandler
 Menu, FormMenu, Add, Delete, MenuDeleteHandler
+                                                                               ; Strangely, the icon appears for the GUIs if this code is placed before them, but only appears on main GUi if its placed after it...
+GuiIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr") ; Rewrite these to something simpler in AHK v2 
+TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarFlameIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
+
+SendMessage, 0x80, 0, GuiIcon,, A
+SendMessage, 0x80, 1, TaskbarIcon,, A
+Menu, Tray, Icon, ../macro_images/MacroStarFlameIcon.ico
 
 Gui, 2:New, +AlwaysOnTop +Caption +Border +Resize MinSize225x125  ;Hotkey GUI
 Gui, 2:Add, Text,, Start Hotkey: 
@@ -149,14 +164,11 @@ global addFormHOTKEYPrev := addFormHOTKEY
 global addSlotHOTKEYPrev := addSlotHOTKEY 
 SetTimer, UglyCode, 100
 
-GuiIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr") ; Rewrite these to something simpler in AHK v2 
-TaskbarIcon := DllCall("LoadImage", "Ptr", 0, "Str", "../macro_images/MacroStarFlameIcon.ico","UInt",1, "Int", 64, "Int", 64, "UInt", 0x10, "Ptr")
-
-SendMessage, 0x80, 0, GuiIcon,, A
-SendMessage, 0x80, 1, TaskbarIcon,, A
-Menu, Tray, Icon, ../macro_images/MacroStarFlameIcon.ico
-
-IniRead, currentVersion, settings.ini, ProgramSettings, version, 1.0.0
+Gui, config:New, +AlwaysOnTop +Caption +Border +Resize MinSize225x125 ; Settings GUI
+Gui, config:Add, Checkbox, gSaveConfig vPSenabledEdit, % "Join private server on rejoin: (Enable this before typing the code below)" 
+GuiControl, config:, PSenabledEdit, %PSenabled% 
+Gui, config:Add,Text,xs+0 ys+15, PS Code: 
+Gui, config:Add, Edit, gSaveConfig w120 vPScodeEdit, %PScode% 
 
 try {
     url := "https://api.github.com/repos/FerdAngle/NetanMastersYu/releases"
@@ -268,7 +280,7 @@ return
 
 SaveHotkeys:        
     Gui, 2:Submit, NoHide
-    Gui, 1:Submit, NoHide   ; Need this here for TPKeyEdit to be read. SaveSettings doesnt need specific mentions strangely.
+    Gui, 1:Submit, NoHide   ; Need this here for TPKeyEdit to be read. SaveDataMAIN doesnt need specific mentions strangely.
     HotkeySet := [StartHotkey, StopHotkey, addFormHotkey, addSlotHotkey] 
     for _,hkey in HotkeySet {
         if (hkey = "" or hkey = " ") || (hkey = "!" or hkey = "^" or hkey = "+" or hkey = "^!"){
@@ -361,9 +373,30 @@ HelpInfoGUI:
     )  
          
     Gui, 3:Show, Center, InfoHelp
-return   
+return 
 
-SaveSettings:
+configGUI:
+    SetTimer, UglyCode, Off 
+    HotkeyStates("Off") 
+    Gui, config:Show, Center, Settings 
+return
+
+configGuiClose:
+    Gui, config:Hide 
+    HotkeyStates("On")
+    SetTimer, UglyCode, On 
+return 
+
+SaveConfig:
+    Gui, config:Submit, NoHide 
+    
+    PSenabled := PSenabledEdit
+    PScode := PScodeEdit
+    IniWrite, %PSenabled%, settings.ini, ProgramSettings, state
+    IniWrite, %PScode%, settings.ini, ProgramSettings, code 
+return  
+
+SaveDataMAIN:
     Gui, Submit, NoHide
     ;
     if !RegExMatch(XTimeEdit, "^\d*$") { ;permits ONLY digits and an empty field if the user wants to instant transform 
@@ -813,7 +846,7 @@ RespawnDetector:
                 } 
                 CoordMode, Pixel, Window     
                 PixelSearch, px, py
-                , winX, winY + (winH * 0.5)
+                , winX, winY + (winH * ((0.5) + (0.2 * Twicer * PSenabled)))
                 , winX + (winW * 0.3), winY + winH  
                 , TargetPixel 
                 , 0
@@ -832,6 +865,45 @@ RespawnDetector:
                         IsDone := true 
                     } 
                 } 
+            }
+            if (PSenabled) {
+                PSCol := 0x927AAE
+                BreakLoop := false 
+                loop {     
+                    if BreakLoop {
+                        break
+                    } 
+                    PixelSearch, px, py
+                    , winX + (winW * 0.4), winY + (winH * 0.6) 
+                    , winX + (winW * 0.8), winY + (winH * 0.85)  
+                    , PSCol  
+                    , 3
+                    , Fast RGB Alt
+                    if (ErrorLevel = 0){
+                        MouseMove, px, py
+                        Sleep, 250
+                        MouseClick, left 
+                        Sleep, 500
+                        Send, %PScode%
+                        JoinPSCol := 0x7E23AD
+                        loop {
+                            PixelSearch, px, py
+                            , winX + (winW * 0.5), winY + (winH * 0.5) 
+                            , winX + (winW), winY + winH   
+                            , JoinPSCol  
+                            , 3
+                            , Fast RGB Alt
+                            if (ErrorLevel = 0){
+                                MouseMove, px, py 
+                                Sleep, 250
+                                MouseClick, left
+                                BreakLoop := true 
+                                break  
+                            }
+        
+                        }
+                    } 
+                }
             }
             loop {
                 PixelSearch, px, py
