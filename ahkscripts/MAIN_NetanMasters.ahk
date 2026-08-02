@@ -629,9 +629,11 @@ return
 CoordAssigner:    
     WinSet, AlwaysOnTop, Off, NetanMastersYu
     Gui, +Disabled
+    SetTimer, UglyCode, Off
     HotkeyStates("Off")
     InputBox, addedName, Name Confirmation, % "Name your " name_component,, 200, 125
     HotkeyStates("On")
+    SetTimer, UglyCode, On
     Gui, -Disabled
     WinSet, AlwaysOnTop, On, NetanMastersYu
     
@@ -1009,7 +1011,7 @@ MacroFixer:
         combatLogNAcount := 0
     } else {
         combatLogNAcount += 1
-        if (combatLogNAcount = 90){
+        if ((combatLogNAcount = 90 && TPUser != "") or (combatLogNAcount = 600)){
             SetTimer, HPZenkai, Off 
             SetTimer, MainLoop, Off 
             SetTimer, DeathWatcher, Off  
