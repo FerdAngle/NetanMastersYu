@@ -346,7 +346,17 @@ HelpInfoGUI:
     Gui, 3:New, +AlwaysOnTop +Caption +Border +Resize MinSize200x125
     Gui, 3:Add, Text,,  
     (   
-    -----------MAIN USE OF THE MACRO--------- (IF ANYTHING IS UNCLEAR VISIT THE MAIN MACRO PAGE) 
+    -----------MAIN USE OF THE MACRO--------- (IF ANYTHING IS UNCLEAR VISIT THE MAIN MACRO PAGE)
+        MACRO CONFIG SETUPS FOR EACH TYPE OF MASTERY:
+
+        COMBAT TIME SPENT IN FORM ONLY: Set Transformation Phase to "Before TP" | Have a user in the TP User field.
+        COMBAT ZENKAIS + COMBAT TIME IN FORM: Set Transformation Phase to "After TP" | Have a user in the TP User field.
+        TRANSFORMATION/DETRANFORMATION LOOP ONLY: Blank out the TP User field
+
+        ADDING forms/slots: Hover your mouse cursor where your form/slot is on your SPLIT screen view of roblox and press the associated binded hotkey 
+        DELETING or RENAMING forms/slots: right click on the form/slot selected in the rectangular field and the options will appear.
+
+    --------ALT SET-UP FOR COMBAT ZENKAIS & COMBAT TIME--------
         1) Open FSR on your ALT account FIRST and keep it open. 
         
         2) Launch another roblox instance on your MAIN account (The account you want mastery on) 
@@ -359,15 +369,7 @@ HelpInfoGUI:
            be m1ing on its own. Do not pull down the ESC menu. 
         
         5) Go back to your main and start the macro using the start hotkey (whilst ensuring the settings are right for you)
- -----------------------------------------
-        Macro config setups + Additional Info: 
-
-        Combat time only: Set Transformation Phase to "Before TP" | Have a user in the TP User field.
-        Combat zenkai: Set Transformation Phase to "After TP" | Have a user in the TP User field.
-        Transformation/detransformation loop only: Set Transformation Phase to "Before TP" | Blank out the TP User field
-        
-        ADDING forms/slots: Hover your mouse cursor where your form/slot is on your SPLIT screen view of roblox and press the associated binded hotkey 
-        DELETING or RENAMING forms/slots: right click on the form/slot selected in the rectangular field and the options will appear.
+  -----------------------------------------
     
     
     )  
@@ -729,7 +731,7 @@ MainLoop:   ;----------------------------------------------  MAIN --------------
     if (!Running)
         return 
 
-    if (transformKey != "None" && TPhaseC = "Before TP") {
+    if (transformKey != "None" && (TPhaseC = "Before TP" or TPUser = "")) {
         GoSub, transformSeq  
 
     }
