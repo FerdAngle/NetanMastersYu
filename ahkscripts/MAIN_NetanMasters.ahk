@@ -909,15 +909,16 @@ RespawnDetector:
                     } 
                 }
             }
+            vanishDodgeCol := 0xB0B0B0
             loop {
                 PixelSearch, px, py
-                , winX, winY
-                , winX + (winW * 0.45), winY + (winH * 0.33) 
-                , HPPixelYellow 
+                , winX + (winW * 0.3), winY + (winH * 0.8)
+                , winX + (winW * 0.65), winY + (winH) 
+                , vanishDodgeCol 
                 , 3
                 , Fast RGB
                 if (ErrorLevel = 0){
-                   ; MsgBox,0x40000,, % "Found ALIVE Pixel",1
+                   ; MsgBox,0x40000,, % "Found VANISH Pixel",1
                     break 
                 }
             }
