@@ -913,7 +913,7 @@ RespawnDetector:
             loop {
                 PixelSearch, px, py
                 , winX + (winW * 0.3), winY + (winH * 0.8)
-                , winX + (winW * 0.65), winY + (winH) 
+                , winX + (winW * 0.7), winY + (winH) 
                 , vanishDodgeCol 
                 , 3
                 , Fast RGB
