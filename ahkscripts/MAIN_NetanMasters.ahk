@@ -754,7 +754,7 @@ MainLoop:   ;----------------------------------------------  MAIN --------------
         MouseGetPos, cx, cy 
         MouseMove, cx, cy+400 
         SetTimer, DeathWatcher, 100
-        if (transformKey != "None" && TPhaseC = "After TP"){
+        if (transformKey != "None"){
             SetTimer, HPZenkai, 10 
         } 
     }  
@@ -981,7 +981,9 @@ HPZenkai:
         windowTransistion(0.25, 0.25) ; go back to original 
         
         Sleep, 250
-        GoSub, transformSeq 
+        if (TPhaseC = "After TP"){
+             GoSub, transformSeq    
+        }
         Sleep, 250
         
         windowTransistion(0.95, 0.25) ; go back to alt 
