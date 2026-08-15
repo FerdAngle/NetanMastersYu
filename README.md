@@ -56,7 +56,7 @@ Before beginning, you should have your roblox alt logged in on a browser and you
 
 4) With both accounts launched and in the same server, find a confined space where your ALT can reach your main with m1s but where your main cannot escape out of range. Ideally, one should just dig a hole in the ground and carve out a cube like area (recommended to dig with ki blasts and then crusher ball to create tiny spaces) 
 
-5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse.  
+5) Once you have secured a hole or some other very confined space, go back to your alt roblox window and place it inside of the space and then hold down LMB (Left-mouse button) and whilst holding it down, press esc on your keyboard and your alt should continue to m1 without you having to hold down the mouse. (**IMPORTANT:** LEAVE THE ESC MENU OPEN ON YOUR ALT) 
 
 6) After your alt has been fully setup, go back to your main roblox window and then start the macro (ensuring your settings are properly configured on the macro beforehand) and enjoy farming form mastery ig.
 
